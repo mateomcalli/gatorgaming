@@ -17,10 +17,10 @@ const TeamContent = ({ members }) => {
     {name: 'Colin Mendoza', picture: '/people/colin-m.webp', role: 'Project Manager'},
     {name: 'Joyin Ang', picture: '/people/joyin-a.webp', role: 'Web Designer'},
     {name: 'Lucas McAllister', picture: '/people/lucas-m.png', role: 'Web Designer'},
-    {name: 'Mateo McAllister', picture: '/people/mateo-m.png', role: 'Web Designer Site Developer'},
+    {name: 'Mateo McAllister', picture: '/people/mateo-m.webp', role: 'Web Designer Site Developer'},
     {name: 'Nicolas Boulton', picture: '/people/nico-b.webp', role: 'Web Designer'},
     {name: 'Rhythm Kumar', picture: '/people/rhythm-k.webp', role: 'Web Designer'},
-    {name: 'Steven Lautenbach', picture: '/people/steven-l.png', role: 'Web Designer'}
+    {name: 'Steven Lautenbach', picture: '/people/steven-l.webp', role: 'Web Designer'}
   ]
 
   const main = useDrag(({ delta: [dx] }) => {

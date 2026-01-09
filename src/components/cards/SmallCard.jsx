@@ -5,7 +5,9 @@ const SmallCard = ({ name, picture, role }) => {
         <p className='text-lg font-display text-ggwhite'>{name}</p>
         <img className='pointer-events-none border-1 rounded-full border-ggwhite w-6.5 mr-2 mt-[1px]' src='/other/gatorgaming-logo.png' alt='Gator Gaming logo'/>
       </div>
-      <img className='pointer-events-none mx-[8px] border-1 border-[#9F9F9F]' src={picture} alt={name}/>
+      <div className="px-[8px] w-full h-40">
+        <img className='border border-[#9F9F9F] pointer-events-none w-full h-full object-cover' src={picture} alt={name}/>
+      </div>
       <div className='flex mt-4 mx-[6px] gap-x-2'>
         <img className='pointer-events-none w-20 object-contain h-fit mt-[6px]' src='/team/card-ability.png' alt='"Ability" icon'/>
         <p className='max-w-38 min-h-21 text-ggorange text-lg font-display'>{role}</p>
