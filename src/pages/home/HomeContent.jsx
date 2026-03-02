@@ -10,15 +10,15 @@ const HomeContent = ({ maxSm, minXl }) => {
 
   const faq = [
     { q: 'How do I join Gator Gaming?',
-      a: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis commodo enim. Mauris sit amet mi lobortis, luctus orci accumsan, maximus diam. Nullam auctor nulla bibendum sapien faucibus fringilla.',
+      a: "Come to one of our many events this semester, we don't bite! All of our events are open to everyone, join our Discord to learn what's happening and to stay updated on our day-to-day.",
       i: 1
     },
-    { q: 'How can I get involved with Gator Gaming?',
-      a: 'The best way to get connected is first by joining our Discord channel and taking the time to come out to our events and meet your fellow gamers!',
+    { q: 'What events does Gator Gaming host?',
+      a: "Any category you can imagine, we probably have an event for! In the event that we don't, we are always accepting fresh ideas from our community, since collaboration is the backbone of our organization.",
       i: 2
     },
-    { q: 'What events does Gator Gaming host?',
-      a: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis commodo enim. Mauris sit amet.',
+    { q: 'Do I need to be a UF student for GatorLAN?',
+      a: 'Not at all!  Anyone can play as long as they attend the event and obtain a wristband at the registration desk. Bring your friends!',
       i: 3
     }
   ]
@@ -61,7 +61,7 @@ const HomeContent = ({ maxSm, minXl }) => {
           <div className='w-3/4 md:w-auto m-auto text-center md:text-left items-center md:items-start xl:pl-10 md:justify-center flex flex-col'>
             {!maxSm && <p className='text-lg xl:text-xl pb-3 text-ggwhite font-display scroll-m-30' id='about-start'>Who are we?</p>}
             <p className='pt-8 md:pt-0 text-2xl xl:text-3xl pb-2 font-semibold text-ggwhite font-display'>We Always Make Epic Plays</p>
-            <p className='text-md xl:text-lg text-ggwhite font-display'>We’re a passionate gaming community dedicated to uniting players of all skill levels—whether you’re here to dominate tournaments, squad up with friends, or just have a good time. Join us and level up your gaming experience!</p>
+            <p className='text-md xl:text-lg text-ggwhite font-display'>We’re a passionate gaming community dedicated to uniting players of all skill levels. Whether you’re here to compete in tournaments, meet other gamers, or just play some games, join us and level up your gaming experience!</p>
             <div className='flex gap-5 pt-8 font-display'>
               <a
                 href='/events/'
@@ -80,7 +80,7 @@ const HomeContent = ({ maxSm, minXl }) => {
               Our Skills
               </p>
               <p className='w-[95%] pb-2 text-md text-ggorange font-display'>
-                We're known for tactical brilliance, unstoppable synergy, and fearless competition — our skills speak for themselves.
+                We're known for tactical brilliance, unstoppable synergy, and fearless competition. Let our skills speak for themselves.
               </p>
               <SkillsList/>
             </div>
@@ -91,7 +91,7 @@ const HomeContent = ({ maxSm, minXl }) => {
                 Competition
               </p>
               <p className='text-sm xl:text-md px-5 pb-12 text-ggorange font-display'>
-                For the thrill of the game — from intense tournaments to friendly matches.
+                We offer intense tournaments to friendly matches and everything in between.
               </p>
               <p className='text-xl xl:text-2xl text-ggwhite font-display'>
                 Community
@@ -105,7 +105,7 @@ const HomeContent = ({ maxSm, minXl }) => {
                 Collaboration
               </p>
               <p className='text-sm xl:text-md px-5 pb-12 text-ggorange font-display'>
-                Teamwork makes the dream work — we are always open to new ideas and input.
+                Teamwork makes the dream work, we are always open to new ideas and input.
               </p>
               <p className='text-xl xl:text-2xl text-ggwhite font-display'>
                 Creativity
@@ -168,7 +168,7 @@ const HomeContent = ({ maxSm, minXl }) => {
           {minXl &&
           <div className='w-fit pt-28'>
             <img 
-              className='rounded-3xl aspect-auto z-2'
+              className='rounded-2xl aspect-auto z-2'
               src='home/faq-image.webp'
               alt='Club members'
             />

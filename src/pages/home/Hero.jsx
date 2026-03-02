@@ -13,7 +13,7 @@ const Hero = ({ minLg }) => {
             We're UF's student-led gaming club, committed to hosting community events that are completely free for all players.
           </h1>
           <p className='text-ggorange py-8 text-md sm:px-0 md:text-lg'>
-            Level Up Together: Your Ultimate Campus Gaming Community
+            Proudly Serving UF's Gaming Community Since 2009!
           </p>
           <HomeButtons/>
         </div>

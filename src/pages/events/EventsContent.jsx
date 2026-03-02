@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io'
+import OrangeButton from '../../components/OrangeButton'
 import { motion } from 'framer-motion'
 import EventsList from './EventsList'
 import PopulateCalendar from './PopulateCalendar'
@@ -92,12 +93,12 @@ const EventsContent = ({ minLg, lanInfo, eventList }) => {
       <div className='flex relative z-1 w-fit md:w-4/5 lg:w-fit ml-0 lg:ml-16'>
         <img className='absolute min-w-[900px] -top-20 -left-20 lg:left-70 lg:-top-45 pointer-events-none z-0' src='/events/gatorlan-blur.png' alt='Blurry background asset'/>
         {minLg && 
-          <div className='flex flex-col w-130 gap-y-8 z-2'>
+          <div className='flex flex-col w-120 gap-y-8 z-2'>
             <img className='aspect-auto w-130 rounded-3xl' src='/events/gatorlan2.jpg' alt='GatorLAN photo'/>
-            <p className='text-center font-display'>GatorLAN is lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ullamco laboris. Join our Discord for more information about this semester's edition!</p>
+            <p className='text-center font-display'>GatorLAN is our semesterly LAN event, where we come together as a community for local tournaments, panels, open play, and more! There's something for everyone, so whether you're already familiar with our community or not, GatorLAN is an awesome opportunity to show out!</p>
           </div>
         }
-        <div className='flex flex-col gap-y-12 lg:gap-y-20 z-2'>
+        <div className='flex flex-col gap-y-12 lg:gap-y-16 z-2'>
           {!minLg && <EventsSeparator/>}  
           <div className='text-center'>
             <p 
@@ -109,7 +110,7 @@ const EventsContent = ({ minLg, lanInfo, eventList }) => {
               GatorLAN <span className='text-ggwhite'>{lanInfo?.semester} {lanInfo?.year}</span>
             </p>
             <p className='text-[24px] pl-1 text-ggwhite font-display'>{lanInfo?.dateRange}</p>
-            {!minLg && <p className='text-center font-display md:px-20 px-10 pt-8'>GatorLAN is lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ullamco laboris. Join our Discord for more information about this semester's edition!</p>}
+            {!minLg && <p className='text-center font-display md:px-20 px-10 pt-8'>GatorLAN is our semesterly LAN event, where we come together as a community for local tournaments, panels, open play, and more! There's something for everyone, so whether you're already familiar with our community or not, GatorLAN is an awesome opportunity to show out!</p>}
           </div>
           <div className='w-100 ml-16 self-center grid gap-y-1.5 grid-cols-2 grid-rows-4'>
             {features.map((feature, i) => (
@@ -133,6 +134,9 @@ const EventsContent = ({ minLg, lanInfo, eventList }) => {
               </div>
             </div>
           </div>
+          <div className='m-auto'>
+            <OrangeButton href='https://discord.gg/dUpVeHdZwK' text='Join the Discord!'/>
+          </div>
         </div>
       </div>
       {minLg && <EventSeparatorLines/>}
@@ -141,7 +145,7 @@ const EventsContent = ({ minLg, lanInfo, eventList }) => {
         <div className='w-110 flex flex-col gap-y-8 justify-center z-2'>
           <img className='absolute right-20 top-10 lg:-top-10 lg:right-70 min-w-[800px] pointer-events-none z-0' src='/events/extra-life-blur.png' alt='Blurry background asset'/>
           <img className='w-100 self-center pr-6 lg:w-120 lg:ml-0 z-2' src='events/extra-life-logo.png' alt='Extra Life logo'/>
-          <p className='text-pretty text-center font-display px-8 lg:px-0 z-2'>Extra Life is lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat conmodo labore.</p>
+          <p className='text-pretty text-center font-display px-8 lg:px-0 z-2'>We are proud participants of Extra Life by Childen's Miracle Network, which is a charity streaming series that aims to raise money for children in need.</p>
         </div>
         <img className='w-90 h-65 sm:w-100 sm:h-70 ml-2 lg:w-115 lg:h-80 lg:ml-0 my-10 lg:my-20 rounded-3xl z-2' src='/events/extralife.webp' alt='Extra Life photo'/>
       </div>
