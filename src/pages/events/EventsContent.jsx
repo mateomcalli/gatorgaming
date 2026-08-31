@@ -123,13 +123,13 @@ const EventsContent = ({ minLg, lanInfo, eventList }) => {
           <div className='flex justify-around'>
             <div className='flex'>
               <div className='flex flex-col text-center'>
-                <p className='text-2xl font-pixels text-ggorange'>900+</p>
+                <p className='text-2xl font-pixels text-ggorange'>1200+</p>
                 <p className='text-lg font-display text-ggwhite'>Average<br/>Registrations</p>
               </div>
             </div>
             <div className='flex'>
               <div className='flex flex-col text-center'>
-                <p className='text-2xl font-pixels text-ggorange'>30+</p>
+                <p className='text-2xl font-pixels text-ggorange'>50+</p>
                 <p className='text-lg font-display text-ggwhite'>Games<br/>Played</p>
               </div>
             </div>
@@ -146,6 +146,7 @@ const EventsContent = ({ minLg, lanInfo, eventList }) => {
           <img className='absolute right-20 top-10 lg:-top-10 lg:right-70 min-w-[800px] pointer-events-none z-0' src='/events/extra-life-blur.png' alt='Blurry background asset'/>
           <img className='w-100 self-center pr-6 lg:w-120 lg:ml-0 z-2' src='events/extra-life-logo.png' alt='Extra Life logo'/>
           <p className='text-pretty text-center font-display px-8 lg:px-0 z-2'>We are proud participants of Extra Life by Childen's Miracle Network, which is a charity streaming series that aims to raise money for children in need.</p>
+          <p className='text-pretty text-center font-display px-8 lg:px-0 z-2'>Every year we host a charity for a total of 24-hours broken up into an inperson and an online segment where we put the officers through true torment all in a bid to raise money for the children!</p>
         </div>
         <img className='w-90 h-65 sm:w-100 sm:h-70 ml-2 lg:w-115 lg:h-80 lg:ml-0 my-10 lg:my-20 rounded-3xl z-2' src='/events/extralife.webp' alt='Extra Life photo'/>
       </div>

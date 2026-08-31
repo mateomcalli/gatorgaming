@@ -7,7 +7,7 @@ const albumSchema = new Schema({
     default: Date.now
   },
   coverImage: String,
-  images: [String]
+  photosUrl: String,
 })
 
 const Album = model('album', albumSchema)

@@ -5,13 +5,12 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { IoIosArrowBack } from 'react-icons/io'
 
 const Gallery = ({ albumsList, emptyBool }) => {
-  const [albumOpen, setAlbumOpen] = useState(false)
-  const [albumName, setAlbumName] = useState(null)
+  //const [albumOpen, setAlbumOpen] = useState(false)
+  //const [albumName, setAlbumName] = useState(null)
 
   return (
     <div className='relative lg:pb-50 flex flex-col items-center w-screen min-h-screen'>
       <AnimatePresence mode='wait'>
-        {!albumOpen && (
           <>
             <motion.div
               className='absolute min-w-[750px] -mt-40 right-[-200px] xl:right-[-100px]'
@@ -40,17 +39,15 @@ const Gallery = ({ albumsList, emptyBool }) => {
                       _id={album._id}
                       title={album.title}
                       coverImage={album.coverImage}
-                      setAlbumOpen={setAlbumOpen}
-                      setAlbumName={setAlbumName}
+                      photosUrl={album.photosUrl}
                     />
                   ))}
                 </div>
               }
             </motion.div>
           </>
-        )}
 
-        {albumOpen && (
+        {/*albumOpen && (
           <motion.div
             key='album-page'
             initial={{ opacity: 0 }}
@@ -66,7 +63,7 @@ const Gallery = ({ albumsList, emptyBool }) => {
             </div>
             <AlbumPage _id={albumOpen} />
           </motion.div>
-        )}
+        )*/}
       </AnimatePresence>
     </div>
   )

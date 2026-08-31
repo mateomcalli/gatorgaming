@@ -1,9 +1,8 @@
 import { motion } from 'framer-motion'
 
-const AlbumThumbnail = ({ _id, title, coverImage, setAlbumOpen, setAlbumName }) => {
+const AlbumThumbnail = ({ _id, title, coverImage, photosUrl}) => {
   const handleClick = () => {
-    setAlbumOpen(_id)
-    setAlbumName(title)
+    window.open(photosUrl, "_blank", "noopener,noreferrer")
   }
 
   return (

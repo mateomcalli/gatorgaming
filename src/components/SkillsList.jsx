@@ -1,8 +1,9 @@
 const SkillsList = () => {
   const skills = [
-    {name: 'Tournament Hosting', level: 75},
+    {name: 'Event Hosting', level: 75},
     {name: 'Casual & Competitive Gaming', level: 90},
-    {name: 'Community Building', level: 100}
+    {name: 'Community Building', level: 100},
+    {name: 'Touching Grass', level: 1}
   ]
   return (
     <>

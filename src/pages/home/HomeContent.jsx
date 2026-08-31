@@ -10,15 +10,15 @@ const HomeContent = ({ maxSm, minXl }) => {
 
   const faq = [
     { q: 'How do I join Gator Gaming?',
-      a: "Come to one of our many events this semester, we don't bite! All of our events are open to everyone, join our Discord to learn what's happening and to stay updated on our day-to-day.",
+      a: "Simply come to any of our events! There’s no membership application and no strings attached to your membership; just show up and stay for as long as you’d like! Membership is open to all UF students, but we welcome anyone into our community! Join our Discord for more!",
       i: 1
     },
     { q: 'What events does Gator Gaming host?',
-      a: "Any category you can imagine, we probably have an event for! In the event that we don't, we are always accepting fresh ideas from our community, since collaboration is the backbone of our organization.",
+      a: "Gator Gaming hosts a large assortment of events every semester, including weekly GBMs, socials, and a biannual tournament GatorLAN!",
       i: 2
     },
     { q: 'Do I need to be a UF student for GatorLAN?',
-      a: 'Not at all!  Anyone can play as long as they attend the event and obtain a wristband at the registration desk. Bring your friends!',
+      a: 'Not at all!  Anyone can come as long as they attend the event and obtain a wristband at the registration desk. Bring your friends!',
       i: 3
     }
   ]
@@ -60,8 +60,8 @@ const HomeContent = ({ maxSm, minXl }) => {
           </div>
           <div className='w-3/4 md:w-auto m-auto text-center md:text-left items-center md:items-start xl:pl-10 md:justify-center flex flex-col'>
             {!maxSm && <p className='text-lg xl:text-xl pb-3 text-ggwhite font-display scroll-m-30' id='about-start'>Who are we?</p>}
-            <p className='pt-8 md:pt-0 text-2xl xl:text-3xl pb-2 font-semibold text-ggwhite font-display'>We Always Make Epic Plays</p>
-            <p className='text-md xl:text-lg text-ggwhite font-display'>We’re a passionate gaming community dedicated to uniting players of all skill levels. Whether you’re here to compete in tournaments, meet other gamers, or just play some games, join us and level up your gaming experience!</p>
+            <p className='pt-8 md:pt-0 text-2xl xl:text-3xl pb-2 font-semibold text-ggwhite font-display'>UF's Premier Gaming Club</p>
+            <p className='text-md xl:text-lg text-ggwhite font-display'>Gator Gaming is a student organization dedicated to nurtuing the gaming community here at UF. Whether you’re into competitive gaming or simply enjoy a casual game from time to time, everyone is welcome!</p>
             <div className='flex gap-5 pt-8 font-display'>
               <a
                 href='/events/'
@@ -80,7 +80,7 @@ const HomeContent = ({ maxSm, minXl }) => {
               Our Skills
               </p>
               <p className='w-[95%] pb-2 text-md text-ggorange font-display'>
-                We're known for tactical brilliance, unstoppable synergy, and fearless competition. Let our skills speak for themselves.
+                Gator Gaming hosts a wide variety of events that are open to all UF students!
               </p>
               <SkillsList/>
             </div>
@@ -88,16 +88,16 @@ const HomeContent = ({ maxSm, minXl }) => {
           <div className='px-8 pt-6 mt-8 md:px-0 md:pt-0 lg:mt-0 flex flex-row text-center'>
             <div className='pr-0 xl:pr-5 w-1/2 flex flex-col text-ggwhite font-display'>
               <p className='text-xl xl:text-2xl text-ggwhite font-display'>
-                Competition
-              </p>
-              <p className='text-sm xl:text-md px-5 pb-12 text-ggorange font-display'>
-                We offer intense tournaments to friendly matches and everything in between.
-              </p>
-              <p className='text-xl xl:text-2xl text-ggwhite font-display'>
                 Community
               </p>
-              <p className='text-sm xl:text-md px-5 text-ggorange font-display'>
+              <p className='text-sm xl:text-md px-5 pb-17 text-ggorange font-display'>
                 A space where friendships are formed, online and off.
+              </p>
+              <p className='text-xl xl:text-2xl text-ggwhite font-display'>
+                Competition
+              </p>
+              <p className='text-sm xl:text-md px-5 text-ggorange font-display'>
+                We offer intense tournaments to friendly matches and everything in between.
               </p>
             </div>
             <div className='w-1/2 pr-0 xl:pl-5 flex flex-col text-ggwhite font-display'>
@@ -108,10 +108,10 @@ const HomeContent = ({ maxSm, minXl }) => {
                 Teamwork makes the dream work, we are always open to new ideas and input.
               </p>
               <p className='text-xl xl:text-2xl text-ggwhite font-display'>
-                Creativity
+                Opportunity
               </p>
               <p className='text-sm xl:text-md px-5 text-ggorange font-display'>
-                Show off your skills, memes, montages, or cosplay.
+                We are always looking for new leaders, through volunteering, apprenticeships, and more!
               </p>
             </div>
           </div>
