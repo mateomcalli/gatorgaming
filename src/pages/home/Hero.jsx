@@ -10,7 +10,7 @@ const Hero = ({ minLg }) => {
             Welcome to Gator Gaming!
           </p>
           <h1 className='text-2xl sm:text-3xl lg:text-4xl xl:text-5xl leading-tight font-semibold text-ggwhite'>
-            We're UF's student-led gaming club, committed to hosting community events that are completely free for all players.
+            We are UF's largest Gaming organization dedicated to providing a space for all gamers at UF
           </h1>
           <p className='text-ggorange py-8 text-md sm:px-0 md:text-lg'>
             Proudly Serving UF's Gaming Community Since 2009!

@@ -6,6 +6,7 @@ import { GrFormUpload } from 'react-icons/gr'
 import { HiOutlineInformationCircle } from 'react-icons/hi'
 import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
+import { form } from 'framer-motion/client';
 
 const GalleryManager = ({ refresh, toggleRefresh }) => {
   const formRef = useRef(null)
@@ -14,7 +15,7 @@ const GalleryManager = ({ refresh, toggleRefresh }) => {
     title: '',
     dateAdded: '',
     coverImage: '',
-    images: []
+    photosUrl: ''
   })
   const [submitting, setSubmitting] = useState(false)
 
@@ -38,7 +39,7 @@ const GalleryManager = ({ refresh, toggleRefresh }) => {
   const handleChange = (event) => {
     setAlbumData(prev => ({
       ...prev,
-      [event.target.name]: (event.target.name === 'images' || event.target.name === 'coverImage') ? event.target.files : event.target.value 
+      [event.target.name]: event.target.name === 'coverImage' ? event.target.files : event.target.value 
     }))
   }
 
@@ -49,9 +50,12 @@ const GalleryManager = ({ refresh, toggleRefresh }) => {
     const formData = new FormData()
     formData.append('title', albumData.title)
     formData.append('coverImage', albumData.coverImage[0]) // should be fine
+    /*
     for (let i = 0; i < albumData.images.length; i++) {
       formData.append('images', albumData.images[i])
     }
+    */
+   formData.append('photosUrl', albumData.photosUrl)
 
     try {
       await axios.post(`${BASE_URL}/api/gallery`, formData, { withCredentials: true })
@@ -61,7 +65,7 @@ const GalleryManager = ({ refresh, toggleRefresh }) => {
         title: '',
         dateAdded: '',
         coverImage: '',
-        images: []
+        photosUrl: ''
       })
       toggleRefresh(true)
     } catch (error) {
@@ -83,7 +87,7 @@ const GalleryManager = ({ refresh, toggleRefresh }) => {
               title={album.title}
               dateAdded={album.dateAdded}
               coverImage={album.coverImage}
-              images={album.images}
+              photosUrl={album.photosUrl}
               toggleRefresh={toggleRefresh}
             />
           ))}
@@ -121,7 +125,8 @@ const GalleryManager = ({ refresh, toggleRefresh }) => {
               />
             </motion.label>
           </div>
-          <div className='flex w-fit gap-2'>
+          <input className='font-display placeholder-[#999] focus:outline-none' name='photosUrl' placeholder='Album URL' onChange={handleChange} required/>
+          {/*<div className='flex w-fit gap-2'>
             <p className='font-display text-[#999]'>Upload Images:</p>
             <motion.label
               className={albumData.images.length >= 1 
@@ -143,7 +148,7 @@ const GalleryManager = ({ refresh, toggleRefresh }) => {
                 required
               />
             </motion.label>
-          </div>
+          </div>*/}
           <motion.button
             whileHover={{
               backgroundColor: 'rgb(244, 126, 32, 0.6)',

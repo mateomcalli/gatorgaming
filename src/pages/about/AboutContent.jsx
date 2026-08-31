@@ -19,7 +19,7 @@ const AboutContent = ({ minLg, minMd }) => {
             <div className='pt-10 pb-6 justify-center lg:justify-between flex flex-col lg:flex-row lg:items-center gap-x-10 gap-y-10'>
               <div className='flex flex-col gap-y-5 lg:gap-y-3 lg:w-[32%] xl:w-[35%] lg:text-start lg:text-pretty text-center'>
                 <p className='px-5 md:px-0 pt-6 lg:pt-0 text-4xl text-ggwhite font-semibold font-display text-nowrap'>We are Gator Gaming.</p>
-                <p className='px-5 md:px-0 text-lg text-ggwhite font-display'>Gator Gaming is the premier hub for video game enthusiasts here at UF. Want to show off your smash bros skills? Want to discover new indie RPGs? Want to meet some amazingly cool people? We’ve got you covered.</p>
+                <p className='px-5 md:px-0 text-lg text-ggwhite font-display'>Gator Gaming is UF’s largest community of video game enjoyers. Any gamer of any skill is welcome here, whether you play competitive games or casual ones, cozy games or tactical shooters, strategy sims or RPGs, Gator Gaming has a place for anyone!</p>
               </div>
             <Carousel/>
             </div>
@@ -41,14 +41,14 @@ const AboutContent = ({ minLg, minMd }) => {
             {minLg && <img className='lg:w-100 lg:h-60 xl:w-100 xl:h-70 2xl:w-120 2xl:h-80 rounded-4xl' src='/about/about-img1.webp' alt='Club members'/>}
             <div className='flex flex-col text-center justify-center items-center gap-y-3'>
               <p className='text-3xl text-ggwhite font-display'>Everyone is here!</p>
-              <p className='text-base text-ggwhite font-display pb-4'>Whether you are interested in casual gaming or looking for a new challenge, we strive to. Here at Gator Gaming, we just want to have fun playing video-games (and we know you do too). Our team is dedicated to creating a collaborative environment that promotes quality gaming, integrity, diversity, and a sense of community.</p>
+              <p className='text-base text-ggwhite font-display pb-4'>Gator Gaming boasts a diverse membership of fans of just about every game out there! Whether its niche games or more popular ones, we guarantee if you can name a game, there is someone else here who plays it! To learn more about our community, join our Discord server or check out our team! We’re always looking to make new friends with fellow gamers.</p>
               <OrangeButton text='Team' href='/team'/>
             </div>
           </div>
           <div className='items-center flex gap-x-15'>
             <div className='flex flex-col text-center justify-center items-center gap-y-3'>
-              <p className='text-3xl text-ggwhite font-display'>Let's-A-Go</p>
-              <p className='text-base text-ggwhite font-display pb-4'>Gator Gaming hosts weekly events for members to come together and share their love of gaming! From roller skating outings to family-feud competition to te traditional double-elimination bracket, there’s an event for everyone. </p>
+              <p className='text-3xl text-ggwhite font-display'>Our Purpose</p>
+              <p className='text-base text-ggwhite font-display pb-4'>Gator Gaming’s primary goal is to nurture a community of people who just like video games here at the University of Florida, giving members a break from their academics and a place to meet new friends. We accomplish this through a multitude of weekly meetings, off-campus socials, and plenty of other events!</p>
               <OrangeButton text='Events' href='/events'/>
             </div>
             {minLg && <img className='lg:w-100 lg:h-60 xl:w-100 xl:h-70 2xl:w-120 2xl:h-80 rounded-4xl' src='/about/about-img2.webp' alt='Club members'/>}
