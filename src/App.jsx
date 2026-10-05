@@ -2,6 +2,7 @@ import { useMediaQuery } from 'react-responsive'
 import { Routes, Route } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+import { Analytics } from '@vercel/analytics/react'
 import Layout from './pages/home/Layout'
 import Hero from './pages/home/Hero'
 import HomeContent from './pages/home/HomeContent'
@@ -119,6 +120,7 @@ const App = () => {
           />
         </Route>
       </Routes>
+      <Analytics />
     </>
   )
 }
