@@ -4,6 +4,7 @@ import { useState } from 'react';
 import FaqBlur from '../../bgblurs/FaqBlur';
 import { FaArrowRightLong } from 'react-icons/fa6'
 import { FaPlus } from 'react-icons/fa6';
+import Comment from '../../components/Comments'
 
 const HomeContent = ({ maxSm, minXl }) => {
   const [faqSelection, setFaqSelection] = useState(null)
@@ -79,6 +80,7 @@ const HomeContent = ({ maxSm, minXl }) => {
               <p className='pb-2 text-2xl xl:text-3xl text-ggwhite font-display'>
               Our Skills
               </p>
+              <Comment comments={["Seek out the hidden paths"]}/>
               <p className='w-[95%] pb-2 text-md text-ggorange font-display'>
                 Gator Gaming hosts a wide variety of events that are open to all UF students!
               </p>

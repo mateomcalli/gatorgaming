@@ -8,6 +8,7 @@ import Coins from '../../components/decorative/Coins'
 import AffiliatedClubs from './AffiliatedClubs'
 import { LuX } from 'react-icons/lu'
 import OrangeButton from '../../components/OrangeButton'
+import Comment from '../../components/Comments'
 
 const AboutContent = ({ minLg, minMd }) => {
   return (

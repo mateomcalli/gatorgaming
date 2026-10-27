@@ -16,7 +16,7 @@ const MobileNavbar = ({ setSelectedPage }) => {
       <div className='px-6 border-b-1 border-[#2e2e2d] fixed justify-between items-center w-screen top-0 flex h-20 bg-ggbg font-display z-10'>
         <div className='w-fit flex-shrink-0'>
           <img
-            onClick={() => setSelectedPage('Home')}
+            onClick={() => setSelectedPage('/k1ll3r5')}
             className='w-16'
             src='https://i.imgur.com/n2RSSOQ.png'
             // imgur is crazy work LOL

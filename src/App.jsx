@@ -12,6 +12,19 @@ import EventsContent from './pages/events/EventsContent'
 import Login from './pages/login/Login'
 import Admin from './pages/admin/Admin'
 import Gallery from './pages/gallery/Gallery'
+import Discovery from './pages/argPages/discovery/Discovery'
+import NoahGate from './pages/argPages/gate/NoahGate'
+import Gate from './pages/argPages/gate/Gate'
+import HiddenTalks from './pages/argPages/hiddenTalks/HiddenTalks'
+import TheTruth from './pages/argPages/thetruth/TheTruth.jsx'
+import NoahPw from './pages/argPages/pw/NoahPw.jsx'
+import Wherabouts from './pages/argPages/wherabouts/Wherabouts.jsx'
+import MSTeams from './pages/argPages/msTeams/MSTeams.jsx'
+import Creepy from './pages/argPages/gr1m4ld1/Creepy.jsx'
+import SigEvents from './pages/argPages/sigEvents/SigEvents.jsx';
+import NoahDM from './pages/argPages/dms/NoahDm.jsx';
+import ZackPw from './pages/argPages/pw/ZackPw.jsx';
+import EdwinDM from './pages/argPages/dms/EdwinDm.jsx';
 
 const App = () => {
   const maxSm = useMediaQuery({ maxWidth: 767 })
@@ -82,7 +95,7 @@ const App = () => {
   return (
     <>
       <Routes>
-        <Route path='/' element={<Layout isMobile={isMobile} maxMd={maxMd}/>}>
+        <Route path='/' element={<Layout isArg={false} isMobile={isMobile} maxMd={maxMd}/>}>
           <Route
             index
             element={
@@ -96,10 +109,6 @@ const App = () => {
           <Route
             path='/about'
             element={<AboutContent minMd={minMd} minLg={minLg}/>}
-          />
-          <Route
-            path='/team'
-            element={<TeamContent members={members}/>}
           />
           <Route
             path='/events'
@@ -118,6 +127,56 @@ const App = () => {
             element={<Admin/>}
           />
         </Route>
+        <Route path='/' element={<Layout isArg={true} isMobile={isMobile} maxMd={maxMd}/>}>
+          <Route
+            path='/team'
+            element={<TeamContent members={members}/>}
+          />
+        </Route>
+        <Route
+          path='/awakening'
+          element={<ZackPw/>}
+        />
+        <Route
+          path='/discovery'
+          element={<Discovery/>}
+        />
+        <Route
+          path='/answer'
+          element={<Gate/>}
+        />
+        <Route
+          path='/cringe_wall'
+          element={<NoahGate/>}
+        />
+        <Route
+          path='/enillMed'
+          element={<HiddenTalks/>}
+        />
+        <Route
+          path='/7ru7h'
+          element={<TheTruth/>}/>
+        <Route
+          path='/larper'
+          element={<NoahDM/>}/>
+        <Route
+          path='/confrontation'
+          element={<EdwinDM/>}/>
+        <Route
+          path='/a_hunch'
+          element={<NoahPw/>}/>
+        <Route
+          path='/whereHeWas'
+          element={<Wherabouts/>}/>
+        <Route
+          path='/k1ll3r5'
+          element={<MSTeams/>}/>
+        <Route
+          path='/gr1m4ld1'
+          element={<Creepy/>}/>
+        <Route
+          path='/s1g_3v3nt5'
+          element={<SigEvents/>}/>
       </Routes>
     </>
   )

@@ -1,5 +1,6 @@
 import HomeButtons from '../../components/HomeButtons'
 import HeroLines from '../../components/decorative/HeroLines'
+import Comment from '../../components/Comments'
 
 const Hero = ({ minLg }) => {
   return (
@@ -9,12 +10,14 @@ const Hero = ({ minLg }) => {
           <p className='text-xl pb-3 sm:text-2xl text-ggwelcome'>
             Welcome to Gator Gaming!
           </p>
+          <Comment comments={["The pieces are in place for you", "Do you have what it takes to find them"]}/>
           <h1 className='text-2xl sm:text-3xl lg:text-4xl xl:text-5xl leading-tight font-semibold text-ggwhite'>
             We are UF's largest Gaming organization dedicated to providing a space for all gamers at UF
           </h1>
           <p className='text-ggorange py-8 text-md sm:px-0 md:text-lg'>
             Proudly Serving UF's Gaming Community Since 2009!
           </p>
+          <Comment comments={["This place holds secrets you were never ment to see"]}/>
           <HomeButtons/>
         </div>
         {minLg && <HeroLines/>}
